@@ -1,19 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand">{{ logo }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+      <li routerLinkActive="active" class="nav-item active">
+        <a class="nav-link" routerLink="home" >Home</a>
       </li>
-      <li class="nav-item">
+      <li routerLinkActive="active" class="nav-item">
         <a class="nav-link"
-           routerLink="posts"
-          routerLinkActive="active"
-        >Posts</a>
+           routerLink="posts">Posts</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" >Contact</a>
